@@ -1,0 +1,173 @@
+
+/* Basic settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* Navigation bar */
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #2563eb;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Home section */
+#home {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#home h1 {
+    font-size: 36px;
+}
+
+#home h1 span {
+    color: #2563eb;
+}
+
+#home h3 {
+    color: #1d4ed8;
+}
+
+#home p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+/* General sections */
+section:not(#home) {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: white;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    color: #2563eb;
+}
+
+/* Alternating backgrounds */
+#about,
+#projects,
+#contact {
+    background-color: white;
+}
+
+#skills,
+#certifications,
+#experience {
+    background-color: #f4f6f9;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+}
